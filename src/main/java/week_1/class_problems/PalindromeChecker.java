@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class PalindromeChecker {
 
-    // Approach 1: Iterative
+    
     public static boolean isPalindromeIterative(String text) {
 
         int left = 0;
@@ -21,7 +21,7 @@ public class PalindromeChecker {
         return true;
     }
 
-    // Approach 2: Recursive
+    
     public static boolean isPalindromeRecursive(String text) {
 
         if (text.length() <= 1) {
@@ -35,7 +35,6 @@ public class PalindromeChecker {
         return isPalindromeRecursive(text.substring(1, text.length() - 1));
     }
 
-    // Approach 3: Array Reversal
     public static boolean isPalindromeArrayReversal(String text) {
 
         char[] original = text.toCharArray();
